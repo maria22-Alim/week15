@@ -51,7 +51,7 @@ public class Crud1 {
         mainPanel.add(new JLabel(" "), mainConstraints);
          // System name
          JLabel systemNameLabel = new JLabel("SAMPLE CRUD DATABASE", JLabel.CENTER);
-         systemNameLabel.setFont(new Font("Arial", Font.BOLD, 18));
+         systemNameLabel.setFont(new Font("Arial", Font.BOLD, 50));
          mainConstraints.gridy = 3;
          mainPanel.add(systemNameLabel, mainConstraints);
  
@@ -122,7 +122,7 @@ public class Crud1 {
              displayArea.setText(showRecords.getRecords(offset));
              offset += 10;
          });
-         transactionConstraints.gridy = 1;
+         transactionConstraints.gridy = 10;
          transactionPanel.add(showButton, transactionConstraints);
  
          JButton searchButton = new JButton("Search");
